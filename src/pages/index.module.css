@@ -213,6 +213,69 @@
   max-width: 70ch;
 }
 
+:global([data-theme='dark']) .heroMain,
+:global([data-theme='dark']) .heroPanel {
+  border-color: rgba(116, 230, 176, 0.22);
+  background: linear-gradient(180deg, #111a27 0%, #0e1722 100%);
+  box-shadow: 0 16px 34px rgba(2, 8, 18, 0.48);
+}
+
+:global([data-theme='dark']) .badge {
+  background: rgba(75, 209, 143, 0.16);
+  color: #a5f0cb;
+}
+
+:global([data-theme='dark']) .heroSubtitle {
+  color: #c5d3e7;
+}
+
+:global([data-theme='dark']) .heroStats > div {
+  background: #0f1a27;
+  border-color: rgba(116, 230, 176, 0.2);
+}
+
+:global([data-theme='dark']) .heroStats strong {
+  color: #baf5d6;
+}
+
+:global([data-theme='dark']) .heroStats span {
+  color: #b6c4d8;
+}
+
+:global([data-theme='dark']) .inlineLink {
+  color: #92eac0;
+}
+
+:global([data-theme='dark']) .section {
+  border-color: rgba(116, 230, 176, 0.2);
+  background: #111a27;
+  box-shadow: 0 12px 24px rgba(2, 8, 18, 0.4);
+}
+
+:global([data-theme='dark']) .featureCard,
+:global([data-theme='dark']) .audienceGrid article,
+:global([data-theme='dark']) .journeyCard {
+  border-color: rgba(116, 230, 176, 0.18);
+  background: #0f1a27;
+}
+
+:global([data-theme='dark']) .journeyCard:hover {
+  box-shadow: 0 12px 22px rgba(4, 11, 20, 0.5);
+  border-color: rgba(116, 230, 176, 0.32);
+}
+
+:global([data-theme='dark']) .journeyNumber {
+  color: #b7c5da;
+}
+
+:global([data-theme='dark']) .bottomCta {
+  border-color: rgba(116, 230, 176, 0.22);
+  background:
+    radial-gradient(circle at 10% 20%, rgba(75, 209, 143, 0.16), transparent 30%),
+    radial-gradient(circle at 90% 20%, rgba(74, 198, 156, 0.12), transparent 24%),
+    linear-gradient(180deg, #111a27 0%, #0e1722 100%);
+}
+
 @media (max-width: 1080px) {
   .hero {
     grid-template-columns: 1fr;

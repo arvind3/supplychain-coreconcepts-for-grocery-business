@@ -35,3 +35,16 @@ test('mobile UX keeps primary CTA visible', async ({page}) => {
   await page.goto('');
   await expect(page.getByRole('link', {name: 'Start Reading'})).toBeVisible();
 });
+
+test('dark mode keeps home and docs readable', async ({page}) => {
+  await page.emulateMedia({colorScheme: 'dark'});
+  await page.goto('');
+  await expect(page.getByRole('heading', {level: 1})).toContainText(
+    'Supply Chain Core Concepts for the Grocery Business',
+  );
+
+  await page.goto('docs/book-overview');
+  const h1 = page.locator('h1').first();
+  await expect(h1).toBeVisible();
+  await expect(h1).not.toHaveText('404');
+});
