@@ -10,7 +10,8 @@
     "build": "docusaurus build",
     "serve": "docusaurus serve --host 0.0.0.0 --port 3000",
     "typecheck": "tsc --noEmit",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "test:e2e:live": "playwright test -c playwright.live.config.ts"
   },
   "dependencies": {
     "@docusaurus/core": "3.9.2",

@@ -1,0 +1,40 @@
+name: Live Regression - Playwright
+
+on:
+  workflow_dispatch:
+    inputs:
+      base_url:
+        description: "Live URL to run regression tests against"
+        required: false
+        default: "https://arvind3.github.io/supplychain-coreconcepts-for-grocery-business/"
+
+jobs:
+  live-regression:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright browser
+        run: npx playwright install chromium
+
+      - name: Run live Playwright regression
+        env:
+          LIVE_BASE_URL: ${{ github.event.inputs.base_url || 'https://arvind3.github.io/supplychain-coreconcepts-for-grocery-business/' }}
+        run: npx playwright test -c playwright.live.config.ts
+
+      - name: Upload Playwright HTML report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-live-report
+          path: playwright-report

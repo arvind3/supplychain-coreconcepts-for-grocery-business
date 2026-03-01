@@ -6,7 +6,9 @@ export default defineConfig({
   retries: 1,
   reporter: [['list'], ['html', {open: 'never'}]],
   use: {
-    baseURL: 'https://arvind3.github.io/supplychain-coreconcepts-for-grocery-business/',
+    baseURL:
+      process.env.LIVE_BASE_URL ||
+      'https://arvind3.github.io/supplychain-coreconcepts-for-grocery-business/',
     trace: 'on-first-retry',
   },
   projects: [
