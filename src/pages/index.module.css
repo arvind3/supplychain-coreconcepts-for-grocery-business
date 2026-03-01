@@ -1,0 +1,262 @@
+.page {
+  padding: 2rem 0 4rem;
+}
+
+.hero {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 1.2rem;
+  align-items: stretch;
+}
+
+.heroMain,
+.heroPanel {
+  border-radius: 18px;
+  border: 1px solid rgba(20, 83, 45, 0.16);
+  background: linear-gradient(180deg, #ffffff 0%, #f4f9f3 100%);
+  box-shadow: 0 16px 34px rgba(9, 41, 22, 0.08);
+}
+
+.heroMain {
+  padding: 2rem;
+}
+
+.heroPanel {
+  padding: 1.5rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  background: #e6f4ea;
+  color: #14532d;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.heroTitle {
+  margin-top: 0.8rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.12;
+}
+
+.heroSubtitle {
+  font-size: 1.08rem;
+  max-width: 58ch;
+  color: #1a2f24;
+}
+
+.heroActions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1.1rem;
+}
+
+.heroStats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-top: 1.4rem;
+}
+
+.heroStats > div {
+  background: #ffffff;
+  border: 1px solid #d7e8d8;
+  border-radius: 12px;
+  padding: 0.75rem;
+}
+
+.heroStats strong {
+  display: block;
+  font-size: 1.2rem;
+  color: #0d4a2b;
+}
+
+.heroStats span {
+  font-size: 0.86rem;
+  color: #355340;
+}
+
+.heroPanel h2 {
+  margin-bottom: 0.5rem;
+}
+
+.heroPanel ul {
+  margin: 0.2rem 0 0;
+  padding-left: 1.2rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.inlineLink {
+  display: inline-block;
+  margin-top: 0.9rem;
+  font-weight: 700;
+}
+
+.section {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 1rem auto 0;
+  border: 1px solid rgba(20, 83, 45, 0.12);
+  border-radius: 18px;
+  background: #ffffff;
+  padding: 1.5rem;
+  box-shadow: 0 10px 24px rgba(7, 35, 19, 0.05);
+}
+
+.sectionIntro {
+  max-width: 78ch;
+}
+
+.featureGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.featureCard {
+  padding: 0.95rem;
+  border-radius: 12px;
+  border: 1px solid #dbeadb;
+  background: #f9fcf8;
+}
+
+.featureCard h3 {
+  margin-bottom: 0.4rem;
+}
+
+.featureCard p {
+  margin: 0;
+}
+
+.audienceGrid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.audienceGrid article {
+  border-radius: 12px;
+  border: 1px solid #dbeadb;
+  background: #f9fcf8;
+  padding: 1rem;
+}
+
+.audienceGrid h3 {
+  margin-bottom: 0.4rem;
+}
+
+.audienceGrid p {
+  margin: 0;
+}
+
+.journeyGrid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.journeyCard {
+  display: block;
+  border-radius: 12px;
+  border: 1px solid #dbeadb;
+  background: #f9fcf8;
+  padding: 1rem;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.journeyCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 22px rgba(10, 45, 24, 0.08);
+  border-color: #b8d9bd;
+}
+
+.journeyNumber {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.78rem;
+  color: #355340;
+}
+
+.journeyCard h3 {
+  margin-top: 0.4rem;
+  margin-bottom: 0.35rem;
+}
+
+.journeyCard p {
+  margin: 0;
+}
+
+.bottomCta {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 1rem auto 0;
+  border-radius: 18px;
+  padding: 1.6rem;
+  border: 1px solid rgba(20, 83, 45, 0.14);
+  background:
+    radial-gradient(circle at 10% 20%, rgba(34, 197, 94, 0.14), transparent 30%),
+    radial-gradient(circle at 90% 20%, rgba(22, 101, 52, 0.1), transparent 24%),
+    linear-gradient(180deg, #f6fbf5 0%, #eef8ed 100%);
+}
+
+.bottomCta p {
+  max-width: 70ch;
+}
+
+@media (max-width: 1080px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .featureGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .audienceGrid,
+  .journeyGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .page {
+    padding-top: 1rem;
+  }
+
+  .heroMain,
+  .heroPanel,
+  .section,
+  .bottomCta {
+    border-radius: 14px;
+  }
+
+  .heroMain {
+    padding: 1.2rem;
+  }
+
+  .heroPanel,
+  .section,
+  .bottomCta {
+    padding: 1rem;
+  }
+
+  .heroStats {
+    grid-template-columns: 1fr;
+  }
+
+  .featureGrid,
+  .audienceGrid,
+  .journeyGrid {
+    grid-template-columns: 1fr;
+  }
+}
