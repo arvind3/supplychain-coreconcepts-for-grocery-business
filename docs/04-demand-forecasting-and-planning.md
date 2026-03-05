@@ -97,3 +97,75 @@ xychart-beta
     bar [7200, 7600, 8100, 9800, 8800, 8300]
     line [7000, 7800, 7900, 10200, 8600, 8400]
 ```
+
+## Worked Example: Demand Forecasting With Promotion Uplift
+
+### Scenario
+
+A supermarket tracks weekly yogurt demand for one store cluster.
+
+| Week | Baseline Forecast (units) | Promotion Uplift (units) | Final Forecast (units) | Actual Sales (units) |
+| --- | ---: | ---: | ---: | ---: |
+| W1 | 1,150 | 0 | 1,150 | 1,120 |
+| W2 | 1,180 | 120 | 1,300 | 1,340 |
+| W3 | 1,200 | 160 | 1,360 | 1,310 |
+| W4 | 1,210 | 0 | 1,210 | 1,180 |
+
+### Calculation
+
+MAPE per week = `abs(Actual - Forecast) / Actual`
+
+- W1: `abs(1120-1150)/1120 = 2.68%`
+- W2: `abs(1340-1300)/1340 = 2.99%`
+- W3: `abs(1310-1360)/1310 = 3.82%`
+- W4: `abs(1180-1210)/1180 = 2.54%`
+
+Average MAPE = `(2.68 + 2.99 + 3.82 + 2.54) / 4 = 3.01%`
+
+### Interpretation
+
+A 3.01% average MAPE is strong for a promoted perishable category. The largest miss occurred during peak uplift week (W3), indicating the promo elasticity factor should be recalibrated.
+
+## Worked Example: Safety Stock Calculation
+
+### Inputs
+
+| Parameter | Value |
+| --- | ---: |
+| Target service level (`Z`) | 1.65 |
+| Daily demand standard deviation (`sigma_d`) | 80 units |
+| Supplier lead time | 3 days |
+
+### Formula
+
+Safety stock = `Z x sigma_d x sqrt(Lead time)`
+
+Safety stock = `1.65 x 80 x sqrt(3)`
+
+Safety stock = `1.65 x 80 x 1.732 = 228.6` units
+
+Rounded safety stock = **229 units**
+
+### Interpretation
+
+The store cluster should hold 229 units as uncertainty buffer. If lead time variability rises (for example, from 3 to 5 days), safety stock should be recalculated immediately.
+
+## Worked Example: Reorder Point Calculation
+
+### Inputs
+
+| Parameter | Value |
+| --- | ---: |
+| Average demand | 500 units/day |
+| Lead time | 3 days |
+| Safety stock | 229 units |
+
+### Formula
+
+Reorder point = `(Average demand x Lead time) + Safety stock`
+
+Reorder point = `(500 x 3) + 229 = 1,729 units`
+
+### Interpretation
+
+When inventory position falls to 1,729 units, replenishment must trigger. Any manual delay in order release increases stockout risk during lead-time window.

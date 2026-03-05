@@ -96,3 +96,29 @@ flowchart TD
     ALLOC --> WAVE[Outbound Wave]
     WAVE --> SHIP[Store Shipment]
 ```
+
+## Worked Example: Warehouse Throughput and Dock Utilization
+
+### Scenario Inputs
+
+| Parameter | Value |
+| --- | ---: |
+| Inbound pallets received in one shift | 1,260 |
+| Shift duration | 9 hours |
+| Active receiving doors | 7 |
+
+### Throughput Calculation
+
+Throughput per hour = `Total pallets / Shift hours`
+
+Throughput per hour = `1,260 / 9 = 140 pallets/hour`
+
+### Door Utilization Calculation
+
+Pallets per door per hour = `140 / 7 = 20 pallets/door/hour`
+
+If engineered target = 23 pallets/door/hour, then utilization gap = `23 - 20 = 3 pallets/door/hour`
+
+### Interpretation
+
+The site is operating below engineered door productivity. Root-cause checks should focus on appointment punctuality, unload staffing, and ASN accuracy because each can throttle effective dock cycle speed.

@@ -94,3 +94,31 @@ flowchart TD
     WALKIN --> KPI[Shelf Availability KPI]
     LM --> KPI
 ```
+
+## Worked Example: Inventory Turnover and Days of Supply
+
+### Scenario Inputs
+
+A dairy category in one region reports:
+
+| Parameter | Value |
+| --- | ---: |
+| Cost of goods sold (annual) | $18,200,000 |
+| Average inventory value | $2,600,000 |
+| Average daily COGS | $49,863 |
+
+### Inventory Turnover Calculation
+
+Inventory turnover = `COGS / Average inventory`
+
+Inventory turnover = `18,200,000 / 2,600,000 = 7.0 turns`
+
+### Days of Supply (DOS) Calculation
+
+DOS = `Average inventory / Average daily COGS`
+
+DOS = `2,600,000 / 49,863 = 52.1 days`
+
+### Interpretation
+
+Seven turns per year with 52 days of supply is often too high for short-life dairy items. Teams should reduce cycle stock and refine forecast error handling to improve freshness and working-capital efficiency.
