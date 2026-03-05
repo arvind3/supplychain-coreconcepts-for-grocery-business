@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="420" viewBox="0 0 860 420" role="img" aria-label="Weekly demand forecast versus actual sales">
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text x="430" y="34" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#1f2937">Weekly Demand Forecast vs Actual Sales</text>
+  <line x1="80" y1="360" x2="800" y2="360" stroke="#374151" stroke-width="2"/>
+  <line x1="80" y1="70" x2="80" y2="360" stroke="#374151" stroke-width="2"/>
+
+  <g font-family="Arial, sans-serif" font-size="12" fill="#4b5563">
+    <text x="62" y="360" text-anchor="end">0</text>
+    <text x="62" y="301" text-anchor="end">300</text>
+    <text x="62" y="242" text-anchor="end">600</text>
+    <text x="62" y="183" text-anchor="end">900</text>
+    <text x="62" y="124" text-anchor="end">1200</text>
+    <text x="62" y="75" text-anchor="end">1400</text>
+  </g>
+
+  <g stroke="#e5e7eb" stroke-width="1">
+    <line x1="80" y1="301" x2="800" y2="301"/>
+    <line x1="80" y1="242" x2="800" y2="242"/>
+    <line x1="80" y1="183" x2="800" y2="183"/>
+    <line x1="80" y1="124" x2="800" y2="124"/>
+    <line x1="80" y1="75" x2="800" y2="75"/>
+  </g>
+
+  <g font-family="Arial, sans-serif" font-size="12" fill="#374151">
+    <text x="160" y="385" text-anchor="middle">W1</text>
+    <text x="320" y="385" text-anchor="middle">W2</text>
+    <text x="480" y="385" text-anchor="middle">W3</text>
+    <text x="640" y="385" text-anchor="middle">W4</text>
+  </g>
+
+  <polyline fill="none" stroke="#2563eb" stroke-width="3" points="160,122 320,90 480,77 640,111"/>
+  <circle cx="160" cy="122" r="4" fill="#2563eb"/>
+  <circle cx="320" cy="90" r="4" fill="#2563eb"/>
+  <circle cx="480" cy="77" r="4" fill="#2563eb"/>
+  <circle cx="640" cy="111" r="4" fill="#2563eb"/>
+
+  <polyline fill="none" stroke="#dc2626" stroke-width="3" points="160,128 320,82 480,96 640,116"/>
+  <circle cx="160" cy="128" r="4" fill="#dc2626"/>
+  <circle cx="320" cy="82" r="4" fill="#dc2626"/>
+  <circle cx="480" cy="96" r="4" fill="#dc2626"/>
+  <circle cx="640" cy="116" r="4" fill="#dc2626"/>
+
+  <rect x="580" y="50" width="205" height="45" fill="#f9fafb" stroke="#d1d5db"/>
+  <line x1="595" y1="67" x2="620" y2="67" stroke="#2563eb" stroke-width="3"/>
+  <text x="628" y="71" font-family="Arial, sans-serif" font-size="12" fill="#111827">Forecast</text>
+  <line x1="595" y1="82" x2="620" y2="82" stroke="#dc2626" stroke-width="3"/>
+  <text x="628" y="86" font-family="Arial, sans-serif" font-size="12" fill="#111827">Actual Sales</text>
+</svg>

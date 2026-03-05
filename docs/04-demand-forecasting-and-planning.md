@@ -87,16 +87,9 @@ flowchart TD
     F --> I[Inventory and Replenishment Plan]
 ```
 
-## Visual: Demand Planning Review Chart (Illustrative)
+## Visual: Demand Planning Review Chart
 
-```mermaid
-xychart-beta
-    title "Weekly Demand Plan vs Actual (Yogurt Category)"
-    x-axis [W1, W2, W3, W4, W5, W6]
-    y-axis "Units" 0 --> 12000
-    bar [7200, 7600, 8100, 9800, 8800, 8300]
-    line [7000, 7800, 7900, 10200, 8600, 8400]
-```
+![Weekly demand forecast vs actual sales](./charts/demand-forecast-plan-vs-actual.svg)
 
 ## Worked Example: Demand Forecasting With Promotion Uplift
 
