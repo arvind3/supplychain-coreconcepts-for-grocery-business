@@ -22,7 +22,7 @@ Grocery supply chain performance depends on fast, cross-functional decisions. Sh
 - MAPE: Mean Absolute Percentage Error used for forecast accuracy measurement.
 - OTIF (On Time In Full): Delivery arrived on schedule with full committed quantity.
 - Reorder Point: Inventory threshold at which replenishment is triggered.
-- Safety Stock: Buffer inventory that absorbs demand and lead-time uncertainty.
+- Safety Stock: Buffer inventory that absorbs demand and lead time uncertainty.
 - Shelf Availability: Percentage of time product is physically available for customer purchase.
 - SKU: Stock Keeping Unit, unique sellable product identifier.
 - Shrink/Waste: Inventory loss due to spoilage, damage, or process error.
@@ -32,7 +32,7 @@ Grocery supply chain performance depends on fast, cross-functional decisions. Sh
 
 Use this roadmap to move from basic execution to professional operating maturity:
 
-1. Level 1, Foundational visibility: establish reliable inventory, lead-time, and service dashboards.
+1. Level 1, Foundational visibility: establish reliable inventory, lead time, and service dashboards.
 1. Level 2, Process control: define ownership, exception workflows, and response SLAs.
 1. Level 3, Predictive operations: improve forecast segmentation and dynamic replenishment policies.
 1. Level 4, Integrated optimization: align supplier, DC, store, and digital fulfillment decisions with unified KPIs.
@@ -52,3 +52,4 @@ Use this roadmap to move from basic execution to professional operating maturity
 - Track improvement with a balanced metric set: availability, waste, inventory turns, and fulfillment quality.
 
 Professional grocery supply chains are built through disciplined iteration, not one-time transformation programs.
+

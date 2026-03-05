@@ -104,3 +104,4 @@ flowchart TB
 ## Transition to Chapter 2
 
 With the operating model established, the next chapter explains how master data integrity controls whether planning and execution decisions stay reliable at scale.
+

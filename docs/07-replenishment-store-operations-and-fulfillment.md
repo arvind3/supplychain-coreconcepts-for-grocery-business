@@ -126,3 +126,4 @@ Seven turns per year with 52 days of supply is often too high for short-life dai
 ## Transition to Chapter 8
 
 Store and fulfillment execution rely on timely, accurate data exchange. The next chapter maps the core systems and integration controls supporting grocery operations.
+

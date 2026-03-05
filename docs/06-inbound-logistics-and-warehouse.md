@@ -126,3 +126,4 @@ The site is operating below engineered door productivity. Root-cause checks shou
 ## Transition to Chapter 7
 
 With warehouse flow in place, the next challenge is retail execution. The next chapter covers replenishment policy, shelf availability, and omnichannel fulfillment.
+

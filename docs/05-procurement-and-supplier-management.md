@@ -58,7 +58,7 @@ Review rhythm matters. High-risk categories often require weekly operational rev
 ## Failure Modes to Avoid
 
 - Awarding business on unit cost alone.
-- Accepting lead-time assumptions without historical variance analysis.
+- Accepting lead time assumptions without historical variance analysis.
 - Treating all service misses as equivalent (missing frozen protein is not equal to missing low-velocity pantry item).
 - Weak integration between supplier portals and internal planning systems.
 
@@ -84,3 +84,4 @@ flowchart LR
 ## Transition to Chapter 6
 
 Supplier commitments only create customer value when inbound and warehouse execution are reliable. The next chapter addresses that operational layer.
+

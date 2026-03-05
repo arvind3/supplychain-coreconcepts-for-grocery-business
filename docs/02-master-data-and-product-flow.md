@@ -81,3 +81,4 @@ flowchart LR
 ## Transition to Chapter 3
 
 After data foundations, execution quality depends on role clarity. The next chapter defines decision ownership across the grocery supply chain.
+

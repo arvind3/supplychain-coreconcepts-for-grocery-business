@@ -9,7 +9,7 @@ This chapter follows a single chilled yogurt SKU from planning through customer 
 
 ## Stage 1: Demand and Supply Planning
 
-The demand planning team forecasts weekly store-level sales using baseline trend, weather signals, and upcoming promotions. Inventory planning converts forecast into safety stock and reorder triggers based on lead-time reliability and freshness constraints.
+The demand planning team forecasts weekly store-level sales using baseline trend, weather signals, and upcoming promotions. Inventory planning converts forecast into safety stock and reorder triggers based on lead time reliability and freshness constraints.
 
 Key risk: over-forecast drives expiration waste; under-forecast drives shelf-outs.
 
@@ -86,3 +86,4 @@ flowchart LR
 ## Transition to Chapter 11
 
 The final chapter consolidates terminology and provides a practical roadmap for continued capability development.
+

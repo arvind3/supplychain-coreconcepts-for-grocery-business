@@ -29,7 +29,7 @@ The planning output is not just "units forecasted." It becomes purchase orders, 
 Forecasts feed inventory policy decisions:
 
 - Cycle stock: inventory consumed between replenishment events.
-- Safety stock: buffer against demand and lead-time uncertainty.
+- Safety stock: buffer against demand and lead time uncertainty.
 - Reorder point: trigger level for replenishment release.
 
 In grocery, safety stock must be category-sensitive. Frozen vegetables can carry more buffer than ready-to-eat deli items. High-velocity essentials (milk, eggs, bread) require high service reliability with tight freshness management.
@@ -69,7 +69,7 @@ Best practice is segmented accuracy review by category, store archetype, and pro
 
 - Establish exception thresholds that trigger same-day replanning.
 - Keep promotion assumptions explicit and testable.
-- Validate that lead-time changes automatically recalculate reorder points.
+- Validate that lead time changes automatically recalculate reorder points.
 - Pair forecast reviews with supplier and store execution reviews.
 
 Forecasting is only valuable when it changes the right decisions early enough to matter.
@@ -168,8 +168,9 @@ Reorder point = `(500 x 3) + 229 = 1,729 units`
 
 ### Interpretation
 
-When inventory position falls to 1,729 units, replenishment must trigger. Any manual delay in order release increases stockout risk during lead-time window.
+When inventory position falls to 1,729 units, replenishment must trigger. Any manual delay in order release increases stockout risk during lead time window.
 
 ## Transition to Chapter 5
 
 Forecast quality sets the demand signal, but supplier execution determines whether that signal becomes physical inventory. The next chapter focuses on procurement and vendor management.
+

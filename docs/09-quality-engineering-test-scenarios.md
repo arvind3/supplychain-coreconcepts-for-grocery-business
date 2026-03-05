@@ -49,7 +49,7 @@ Release decision should require both technical pass rates and acceptable busines
 Supply chain testing fails when data is unrealistic. Teams should maintain:
 
 - Production-like item masters with representative pack sizes and shelf-life attributes.
-- Supplier profiles with varied lead-time distributions.
+- Supplier profiles with varied lead time distributions.
 - Store clusters with diverse demand patterns.
 - Controlled event calendars for promotions and seasonality.
 
@@ -88,3 +88,4 @@ flowchart LR
 ## Transition to Chapter 10
 
 With risk-based validation in place, the next chapter walks a single SKU through the full lifecycle to connect planning, execution, and performance feedback.
+

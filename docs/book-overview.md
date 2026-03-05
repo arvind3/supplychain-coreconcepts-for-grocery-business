@@ -47,3 +47,4 @@ By the end of the book, you should be able to:
 ## Writing Approach
 
 Each chapter moves from concept to operational mechanics to a grocery scenario based on patterns seen at large retailers such as Walmart, Kroger, Costco, Amazon Fresh, and other regional supermarket networks. The goal is practical understanding: what decisions are made, by whom, with which data, and what happens when the decision is wrong.
+

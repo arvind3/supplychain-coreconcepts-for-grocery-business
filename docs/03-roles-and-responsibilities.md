@@ -40,11 +40,11 @@ A private-label bakery supplier extends lead time from 7 to 11 days due to labor
 Coordinated response:
 
 1. Supplier manager confirms revised capacity and ship calendar.
-1. Planner updates lead-time assumptions and increases near-term safety stock for priority stores.
+1. Planner updates lead time assumptions and increases near-term safety stock for priority stores.
 1. Buyer advances purchase order release dates.
 1. Transport secures additional slots for earlier pickup windows.
 1. Store operations tighten markdown controls to preserve sellable inventory.
-1. QE validates that revised lead-time values propagate through planning, ordering, and replenishment flows.
+1. QE validates that revised lead time values propagate through planning, ordering, and replenishment flows.
 
 ## Organizational Anti-Patterns
 
@@ -76,3 +76,4 @@ flowchart TD
 ## Transition to Chapter 4
 
 Once ownership is clear, planning quality becomes the core performance lever. The next chapter covers forecasting and inventory planning decisions in detail.
+
