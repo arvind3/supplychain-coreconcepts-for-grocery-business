@@ -3,38 +3,52 @@ id: 11-glossary-and-next-steps
 title: 11. Glossary and Next Steps
 ---
 
-## Concept Explanation
+## Why a Shared Vocabulary Matters
 
-This chapter summarizes common terms and gives a practical plan to deepen your domain understanding.
+Grocery supply chain performance depends on fast, cross-functional decisions. Shared terminology reduces misinterpretation between planning, procurement, operations, engineering, and store teams.
 
-## Business Use Case
+## Extended Glossary
 
-New QE team members use this glossary during test planning and incident triage to align quickly with business teams.
+- Allocation: Rule-based distribution of limited inventory across stores or channels.
+- ASN (Advanced Shipping Notice): Pre-arrival shipment message containing quantities and pack details.
+- Bias (Forecast): Persistent tendency to over-forecast or under-forecast demand.
+- Case Pack: Number of sellable units within one logistics case.
+- Cycle Count: Periodic physical inventory check used to correct system records.
+- Days of Supply (DOS): On-hand inventory divided by average daily demand.
+- Distribution Center (DC): Node that receives, stores, and dispatches product to stores.
+- FEFO: First-Expiry-First-Out issuing method for perishables.
+- Fill Rate: Percent of requested quantity fulfilled.
+- Lead Time: Elapsed time from order placement to product availability.
+- MAPE: Mean Absolute Percentage Error used for forecast accuracy measurement.
+- OTIF (On Time In Full): Delivery arrived on schedule with full committed quantity.
+- Reorder Point: Inventory threshold at which replenishment is triggered.
+- Safety Stock: Buffer inventory that absorbs demand and lead-time uncertainty.
+- Shelf Availability: Percentage of time product is physically available for customer purchase.
+- SKU: Stock Keeping Unit, unique sellable product identifier.
+- Shrink/Waste: Inventory loss due to spoilage, damage, or process error.
+- WMS: Warehouse Management System used for storage and movement execution.
 
-## Users Involved
+## Capability Maturity Roadmap
 
-- New team members onboarding into grocery supply chain programs
-- QA/QE, business analysts, and support engineers
+Use this roadmap to move from basic execution to professional operating maturity:
 
-## Tools and Technologies Used
+1. Level 1, Foundational visibility: establish reliable inventory, lead-time, and service dashboards.
+1. Level 2, Process control: define ownership, exception workflows, and response SLAs.
+1. Level 3, Predictive operations: improve forecast segmentation and dynamic replenishment policies.
+1. Level 4, Integrated optimization: align supplier, DC, store, and digital fulfillment decisions with unified KPIs.
 
-- Team wiki and knowledge base
-- Incident and change management tools
-- Test case repositories
+## Suggested Next Steps by Role
 
-## Quick Glossary
+- Planners: review forecast bias by category and implement exception thresholds.
+- Procurement teams: introduce supplier segmentation and OTIF-linked corrective plans.
+- Warehouse leaders: benchmark dock-to-stock and FEFO compliance for perishables.
+- Store operations: measure shelf availability directly and improve backroom cadence.
+- Engineering and QE: add end-to-end monitoring for inventory freshness and event lag.
 
-- SKU: Stock Keeping Unit, a unique product identifier
-- DC: Distribution Center where inventory is received and dispatched
-- ASN: Advanced Shipping Notice from supplier before delivery
-- OTIF: On Time In Full supplier delivery performance
-- Replenishment: Process of restocking stores or channels
-- Fill Rate: Percentage of demand fulfilled without shortage
-- Wastage: Product loss due to expiry, damage, or quality failure
+## Further Practice
 
-## Next Steps for Learners
+- Run one monthly end-to-end SKU review from supplier order to customer sale.
+- Document top five recurring exceptions and build standard response playbooks.
+- Track improvement with a balanced metric set: availability, waste, inventory turns, and fulfillment quality.
 
-1. Map one real product flow in your project from forecast to sale
-1. Build a cross-system E2E test checklist using chapters 8 to 10
-1. Track one KPI per lifecycle stage and validate source data
-1. Partner with business users to review exception scenarios monthly
+Professional grocery supply chains are built through disciplined iteration, not one-time transformation programs.

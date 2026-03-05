@@ -3,24 +3,70 @@ id: 05-procurement-and-supplier-management
 title: 05. Procurement and Supplier Management
 ---
 
-## Concept Explanation
+## Procurement as a Reliability Function
 
-Procurement is the process of sourcing products from suppliers, negotiating terms, placing purchase orders, and managing confirmations. Supplier management ensures reliability, quality, and compliance.
+In grocery retail, procurement is not only about negotiated unit cost. It is a reliability function that protects service level and margin. A low-cost supplier with weak delivery consistency can create greater total cost through expedites, stockouts, substitutions, and lost customer trust.
 
-## Business Use Case
+## Supplier Segmentation
 
-A retailer launches a private-label cereal line. Buyers onboard a new supplier, define contractual lead times, create purchase orders, and monitor supplier fill rates. Any repeated delays trigger supplier scorecard reviews.
+Mature grocery retailers segment suppliers by business criticality:
 
-## Users Involved
+- Strategic suppliers: high-volume or high-risk categories requiring joint business planning.
+- Core suppliers: stable volume with standard performance governance.
+- Opportunistic suppliers: seasonal or tactical sourcing.
 
-- Buyer/Procurement Specialist: creates and follows purchase orders
-- Supplier Relationship Manager: tracks supplier performance
-- Legal and Compliance Team: reviews contracts and standards
-- Accounts Payable Team: validates invoice-to-order matching
+Each segment receives a different cadence for review, escalation, and improvement plans.
 
-## Tools and Technologies Used
+## Contract and Operating Levers
 
-- ERP procurement and PO modules
-- Supplier portals and EDI integrations
-- Contract lifecycle management tools
-- Supplier scorecard and audit dashboards
+Beyond price, procurement teams shape outcomes through:
+
+- Lead-time commitments and variability tolerances.
+- Minimum order quantity and order frequency flexibility.
+- OTIF targets and service penalties.
+- Shelf-life and quality acceptance criteria.
+- Data standards for EDI/API confirmations and ASNs.
+
+These clauses should map to measurable operational behaviors, not legal language that cannot be enforced in daily execution.
+
+## Grocery Scenario: Private-Label Expansion
+
+A Costco-like retailer expands a private-label canned vegetable assortment before peak season.
+
+Procurement playbook:
+
+1. Qualify two suppliers per critical SKU family to reduce single-source risk.
+1. Lock volume bands and flex ranges for surge scenarios.
+1. Align packaging and pallet standards with DC receiving constraints.
+1. Set OTIF thresholds with weekly service scorecards.
+1. Require early warning windows for production disruptions.
+
+When one supplier misses production due to a line outage, procurement shifts incremental volume to the second supplier and protects service continuity with minimal expedited freight.
+
+## Supplier Performance Management
+
+An effective scorecard combines commercial and operational signals:
+
+- OTIF by lane and SKU.
+- Fill rate against purchase order quantity.
+- ASN accuracy and timeliness.
+- Defect rate at receiving.
+- Responsiveness to exception escalations.
+
+Review rhythm matters. High-risk categories often require weekly operational reviews, with monthly executive reviews focused on trend and corrective action effectiveness.
+
+## Failure Modes to Avoid
+
+- Awarding business on unit cost alone.
+- Accepting lead-time assumptions without historical variance analysis.
+- Treating all service misses as equivalent (missing frozen protein is not equal to missing low-velocity pantry item).
+- Weak integration between supplier portals and internal planning systems.
+
+## Practical Recommendations
+
+- Build supplier continuity plans for top revenue and top risk categories.
+- Predefine substitution and emergency sourcing rules before disruptions occur.
+- Connect supplier scorecard results to replenishment policy adjustments.
+- Include procurement in post-promotion retrospectives to refine future commitments.
+
+Procurement excellence in grocery is the discipline of converting supplier agreements into consistent shelf outcomes.
