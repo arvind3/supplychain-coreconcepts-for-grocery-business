@@ -32,6 +32,9 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           routeBasePath: 'docs',
+          breadcrumbs: true,
+          sidebarCollapsible: true,
+          sidebarCollapsed: false,
           editUrl:
             'https://github.com/arvind3/supplychain-coreconcepts-for-grocery-business/edit/main/',
           showLastUpdateAuthor: false,
@@ -68,12 +71,17 @@ const config: Config = {
       items: [
         {
           to: '/docs/book-overview',
-          label: 'Book Overview',
+          label: 'Overview',
           position: 'left',
         },
         {
           to: '/docs/01-grocery-supply-chain-basics',
-          label: 'Start Here',
+          label: 'Chapters',
+          position: 'left',
+        },
+        {
+          to: '/docs/11-glossary-and-next-steps',
+          label: 'Glossary',
           position: 'left',
         },
         {
@@ -91,8 +99,12 @@ const config: Config = {
           items: [
             {label: 'Overview', to: '/docs/book-overview'},
             {
-              label: 'End-to-End Lifecycle',
-              to: '/docs/10-end-to-end-lifecycle-walkthrough',
+              label: 'Chapter 1',
+              to: '/docs/01-grocery-supply-chain-basics',
+            },
+            {
+              label: 'Glossary',
+              to: '/docs/11-glossary-and-next-steps',
             },
           ],
         },
@@ -106,7 +118,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright Â© ${new Date().getFullYear()} Supply Chain Core Concepts`,
+      copyright: `Copyright © ${new Date().getFullYear()} Supply Chain Core Concepts`,
     },
     prism: {
       theme: prismThemes.github,
@@ -117,3 +129,4 @@ const config: Config = {
 };
 
 export default config;
+
