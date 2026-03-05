@@ -73,3 +73,14 @@ Data quality in test environments is a prerequisite for trusted release signals.
 - Run post-release KPI verification as part of done criteria.
 
 Quality engineering is strongest when it speaks the language of operations and customer outcomes.
+
+## Visual: QE Validation Across the Supply Chain
+
+```mermaid
+flowchart LR
+    F[Forecast Output] --> P[PO Generation Test]
+    P --> A[ASN and Receipt Test]
+    A --> R[Replenishment Test]
+    R --> O[OMS and POS Consistency Test]
+    O --> K[Business KPI Validation]
+```

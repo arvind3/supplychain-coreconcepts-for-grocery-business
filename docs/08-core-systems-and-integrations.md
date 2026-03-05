@@ -67,3 +67,18 @@ Professional teams implement explicit controls:
 - Treat integration defects as service incidents with measurable customer impact.
 
 In modern grocery operations, systems integration quality is operational quality.
+
+## Visual: Core System Integration Map
+
+```mermaid
+flowchart LR
+    FORE[Forecasting] --> ERP[ERP]
+    ERP --> SUP[Supplier Integration]
+    SUP --> WMS[WMS]
+    WMS --> TMS[TMS]
+    WMS --> STORE[Store Inventory]
+    STORE --> POS[POS]
+    STORE --> OMS[OMS]
+    POS --> FORE
+    OMS --> FORE
+```

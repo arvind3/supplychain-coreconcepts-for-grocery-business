@@ -68,3 +68,29 @@ Outcome: shelf availability remains stable and online order completion stays abo
 - Integrate last-mile demand forecasts into store labor planning.
 
 Great replenishment is not only about ordering more. It is about synchronizing store reality, digital demand, and network capacity.
+
+## Visual: Inventory Control Cycle
+
+```mermaid
+flowchart LR
+    SALES[POS and Online Demand] --> INV[Inventory Position]
+    INV --> ROP{Below Reorder Point?}
+    ROP -- Yes --> REPLEN[Replenishment Order]
+    ROP -- No --> MON[Continue Monitoring]
+    REPLEN --> RECEIPT[Store/DC Receipt]
+    RECEIPT --> SHELF[Shelf Refill]
+    SHELF --> SALES
+```
+
+## Visual: Replenishment and Last-Mile Interaction
+
+```mermaid
+flowchart TD
+    FC[Demand Forecast] --> RP[Replenishment Plan]
+    RP --> STORE[Store On-Hand]
+    STORE --> PICK[Online Picking]
+    STORE --> WALKIN[Walk-In Sales]
+    PICK --> LM[Last-Mile Routing]
+    WALKIN --> KPI[Shelf Availability KPI]
+    LM --> KPI
+```

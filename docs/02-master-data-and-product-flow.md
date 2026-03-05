@@ -64,3 +64,16 @@ Recovery playbook:
 - Build synthetic test cases that assert unit conversion consistency across ERP, WMS, and store systems.
 
 Master data quality is often the difference between a smooth promo and a public shelf-out event.
+
+## Visual: Master Data to Shelf Data Flow
+
+```mermaid
+flowchart LR
+    MDM[Master Data System] --> ERP[ERP]
+    ERP --> PLAN[Forecast and Replenishment]
+    ERP --> SUPP[Supplier EDI/API]
+    SUPP --> WMS[Warehouse Management]
+    WMS --> STORE[Store Inventory System]
+    STORE --> POS[POS and OMS]
+    POS --> PLAN
+```

@@ -73,3 +73,27 @@ Best practice is segmented accuracy review by category, store archetype, and pro
 - Pair forecast reviews with supplier and store execution reviews.
 
 Forecasting is only valuable when it changes the right decisions early enough to matter.
+
+## Visual: Forecast Decomposition
+
+```mermaid
+flowchart TD
+    H[Historical Sales] --> B[Baseline Forecast]
+    W[Weather Signal] --> A[Adjustment Layer]
+    P[Promotion Calendar] --> A
+    E[Local Events] --> A
+    B --> F[Final Store-Level Forecast]
+    A --> F
+    F --> I[Inventory and Replenishment Plan]
+```
+
+## Visual: Demand Planning Review Chart (Illustrative)
+
+```mermaid
+xychart-beta
+    title "Weekly Demand Plan vs Actual (Yogurt Category)"
+    x-axis [W1, W2, W3, W4, W5, W6]
+    y-axis "Units" 0 --> 12000
+    bar [7200, 7600, 8100, 9800, 8800, 8300]
+    line [7000, 7800, 7900, 10200, 8600, 8400]
+```

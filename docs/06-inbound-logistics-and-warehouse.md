@@ -70,3 +70,29 @@ Teams that optimize only productivity metrics can accidentally harm dispatch rel
 - Audit FEFO compliance for top perishable categories.
 
 Inbound and warehouse operations are where strategy meets physics. Execution detail determines whether planning promises are kept.
+
+## Visual: Warehouse Temperature-Zone Layout
+
+```mermaid
+flowchart LR
+    IN[Inbound Dock] --> QC[Quality and Temperature Check]
+    QC --> A[Ambient Zone]
+    QC --> C[Chilled Zone]
+    QC --> F[Frozen Zone]
+    A --> PICK[Pick Module]
+    C --> PICK
+    F --> PICK
+    PICK --> OUT[Outbound Dock]
+```
+
+## Visual: Inbound to Dispatch Cycle
+
+```mermaid
+flowchart TD
+    APPT[Dock Appointment] --> ASN[ASN Validation]
+    ASN --> RCV[Receiving]
+    RCV --> PUT[Put-away]
+    PUT --> ALLOC[Store Allocation]
+    ALLOC --> WAVE[Outbound Wave]
+    WAVE --> SHIP[Store Shipment]
+```

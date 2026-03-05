@@ -70,3 +70,13 @@ Review rhythm matters. High-risk categories often require weekly operational rev
 - Include procurement in post-promotion retrospectives to refine future commitments.
 
 Procurement excellence in grocery is the discipline of converting supplier agreements into consistent shelf outcomes.
+
+## Visual: Supplier Performance Control Loop
+
+```mermaid
+flowchart LR
+    SCORE[Supplier Scorecard] --> REVIEW[Weekly Performance Review]
+    REVIEW --> ACTION[Corrective Action Plan]
+    ACTION --> EXEC[PO and Capacity Execution]
+    EXEC --> SCORE
+```

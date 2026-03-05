@@ -67,3 +67,36 @@ Result: higher service levels without broad overstock in unaffected stores.
 - Weak handoff between planning teams and store execution teams.
 
 A professional grocery chain wins on coordination speed. Technology helps, but operating discipline across teams is the differentiator.
+
+## Visual: Grocery Network Flow
+
+```mermaid
+flowchart LR
+    S1[Suppliers] --> D1[Regional Distribution Center]
+    S2[Fresh Farms] --> D1
+    D1 --> X1[Cross-Dock Node]
+    X1 --> ST1[Retail Stores]
+    D1 --> ST1
+    ST1 --> C1[In-Store Customers]
+    ST1 --> O1[Online Order Picking]
+    O1 --> C2[Pickup and Last-Mile Delivery]
+```
+
+## Visual: Distribution Network Topology
+
+```mermaid
+flowchart TB
+    SUP[Supplier Clusters]
+    R1[North DC]
+    R2[South DC]
+    M1[Metro Stores]
+    M2[Suburban Stores]
+    M3[Rural Stores]
+
+    SUP --> R1
+    SUP --> R2
+    R1 --> M1
+    R1 --> M2
+    R2 --> M2
+    R2 --> M3
+```

@@ -68,3 +68,17 @@ The chain protects availability while controlling spoilage through coordinated d
 - Waste percentage and markdown recovery.
 
 End-to-end visibility is the difference between reactive firefighting and controlled execution.
+
+## Visual: End-to-End Lifecycle Flow
+
+```mermaid
+flowchart LR
+    DF[Demand Forecast] --> PO[Purchase Order]
+    PO --> ASN[Supplier ASN]
+    ASN --> DC[DC Receipt and Storage]
+    DC --> REPL[Store Replenishment]
+    REPL --> SHELF[Shelf Availability]
+    SHELF --> SALE[POS and Online Sale]
+    SALE --> FB[Performance Feedback]
+    FB --> DF
+```

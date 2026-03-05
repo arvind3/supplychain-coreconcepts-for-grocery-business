@@ -60,3 +60,15 @@ Coordinated response:
 - Build shared war-room playbooks for weather events, strikes, and promotion spikes.
 
 Retail grocery performance is an orchestration problem. Clear ownership converts complexity into repeatable execution.
+
+## Visual: Cross-Functional Decision Escalation
+
+```mermaid
+flowchart TD
+    SIGNAL[Operational Risk Signal] --> PLAN[Planner]
+    PLAN --> BUY[Buyer]
+    BUY --> LOG[Logistics]
+    LOG --> STORE[Store Operations]
+    STORE --> QA[Quality Engineering]
+    QA --> DEC[Joint Decision and Action]
+```
