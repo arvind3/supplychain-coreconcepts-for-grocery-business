@@ -80,3 +80,7 @@ flowchart LR
     ACTION --> EXEC[PO and Capacity Execution]
     EXEC --> SCORE
 ```
+
+## Transition to Chapter 6
+
+Supplier commitments only create customer value when inbound and warehouse execution are reliable. The next chapter addresses that operational layer.

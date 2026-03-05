@@ -169,3 +169,7 @@ Reorder point = `(500 x 3) + 229 = 1,729 units`
 ### Interpretation
 
 When inventory position falls to 1,729 units, replenishment must trigger. Any manual delay in order release increases stockout risk during lead-time window.
+
+## Transition to Chapter 5
+
+Forecast quality sets the demand signal, but supplier execution determines whether that signal becomes physical inventory. The next chapter focuses on procurement and vendor management.

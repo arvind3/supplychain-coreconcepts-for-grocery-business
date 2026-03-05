@@ -82,3 +82,7 @@ flowchart LR
     POS --> FORE
     OMS --> FORE
 ```
+
+## Transition to Chapter 9
+
+Once architecture is defined, validation discipline is required to protect business outcomes. The next chapter presents quality-engineering scenarios and release controls.

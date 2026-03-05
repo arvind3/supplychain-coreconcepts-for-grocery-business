@@ -122,3 +122,7 @@ DOS = `2,600,000 / 49,863 = 52.1 days`
 ### Interpretation
 
 Seven turns per year with 52 days of supply is often too high for short-life dairy items. Teams should reduce cycle stock and refine forecast error handling to improve freshness and working-capital efficiency.
+
+## Transition to Chapter 8
+
+Store and fulfillment execution rely on timely, accurate data exchange. The next chapter maps the core systems and integration controls supporting grocery operations.

@@ -82,3 +82,7 @@ flowchart LR
     SALE --> FB[Performance Feedback]
     FB --> DF
 ```
+
+## Transition to Chapter 11
+
+The final chapter consolidates terminology and provides a practical roadmap for continued capability development.

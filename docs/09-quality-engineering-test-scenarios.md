@@ -84,3 +84,7 @@ flowchart LR
     R --> O[OMS and POS Consistency Test]
     O --> K[Business KPI Validation]
 ```
+
+## Transition to Chapter 10
+
+With risk-based validation in place, the next chapter walks a single SKU through the full lifecycle to connect planning, execution, and performance feedback.

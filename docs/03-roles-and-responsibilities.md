@@ -72,3 +72,7 @@ flowchart TD
     STORE --> QA[Quality Engineering]
     QA --> DEC[Joint Decision and Action]
 ```
+
+## Transition to Chapter 4
+
+Once ownership is clear, planning quality becomes the core performance lever. The next chapter covers forecasting and inventory planning decisions in detail.

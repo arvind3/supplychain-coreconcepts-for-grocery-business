@@ -100,3 +100,7 @@ flowchart TB
     R2 --> M2
     R2 --> M3
 ```
+
+## Transition to Chapter 2
+
+With the operating model established, the next chapter explains how master data integrity controls whether planning and execution decisions stay reliable at scale.

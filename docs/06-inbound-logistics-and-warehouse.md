@@ -122,3 +122,7 @@ If engineered target = 23 pallets/door/hour, then utilization gap = `23 - 20 = 3
 ### Interpretation
 
 The site is operating below engineered door productivity. Root-cause checks should focus on appointment punctuality, unload staffing, and ASN accuracy because each can throttle effective dock cycle speed.
+
+## Transition to Chapter 7
+
+With warehouse flow in place, the next challenge is retail execution. The next chapter covers replenishment policy, shelf availability, and omnichannel fulfillment.
