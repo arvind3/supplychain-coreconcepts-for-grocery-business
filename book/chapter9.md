@@ -58,10 +58,10 @@ Data quality in test environments is a prerequisite for trusted release signals.
 
 | Flow Area | Primary Risk | Validation Signal | Business KPI Guardrail |
 | --- | --- | --- | --- |
-| Forecast to PO | Under-order during promo | Forecast uplift reflected in PO quantity | Shelf availability >= target |
+| Forecast to PO | Under-order during promo | Forecast uplift reflected in PO quantity | Shelf availability at or above target |
 | Supplier to DC | Missing or late ASN | ASN received before dock window | Receiving delay below threshold |
-| DC to Store | Dispatch miss | Outbound wave closes before route cutoff | Store fill rate >= target |
-| Store to OMS | Inventory drift | POS and OMS on-hand delta within tolerance | Order cancellation rate <= target |
+| DC to Store | Dispatch miss | Outbound wave closes before route cutoff | Store fill rate at or above target |
+| Store to OMS | Inventory drift | POS and OMS on-hand delta within tolerance | Order cancellation rate at or below target |
 | Fulfillment | Poor substitutions | Approved substitution rules applied | Customer complaint rate within baseline |
 
 ## Practical Recommendations
